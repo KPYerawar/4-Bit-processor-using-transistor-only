@@ -35,5 +35,27 @@ git commit -m "Added my local processor files"
 git branch -m master main
 
 # 13. You successfully pushed your local "main" branch to GitHub
-# This is when you were asked for your Username and Password (Token).
+# (This is when you entered your username and token for the first time)
 git push -u origin main
+
+# 14. You tried to push again (it failed with "Authentication failed")
+# (You were pushing nothing new and used a bad token)
+git push -u origin main
+
+# 15. You added your new 'git_commands' file (after creating it)
+git add git_commands
+
+# 16. You committed the new 'git_commands' file
+git commit -m "Add git_commands file"
+
+# 17. You pushed the new commit (this succeeded with a new token)
+git push origin main
+
+# 18. You told Git to use the "store" credential helper
+# This tells Git to save your password in a plain text file.
+git config --global credential.helper store
+
+# 19. You pushed one last time
+# Git asked for your username and token, and the "store"
+# helper saved them so you won't be asked again.
+git push
