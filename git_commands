@@ -1,0 +1,39 @@
+# 1. You listed the contents of your folder
+ls
+
+# 2. You checked if it was a Git repository (it was not)
+git status
+
+# 3. You initialized a new, empty Git repository
+git init
+
+# 4. You linked your local repo to the GitHub URL
+git remote add origin https://github.com/KPYerawar/4-Bit-processor-using-transistor-only.git
+
+# 5. You pulled the remote files into your local folder
+git pull origin main --allow-unrelated-histories
+
+# 6. You staged all your local files for a commit
+git add .
+
+# 7. You tried to commit, but it FAILED (Author identity unknown)
+git commit -m "Added my local processor files"
+
+# 8. You tried to push, but it FAILED (Commit failed, branch name was wrong)
+git push -u origin main
+
+# 9. You set your global username for Git
+git config --global user.name "KPYerawar"
+
+# 10. You set your global email for Git
+git config --global user.email "you@example.com"
+
+# 11. You successfully committed your files (this time it worked)
+git commit -m "Added my local processor files"
+
+# 12. You renamed your local "master" branch to "main"
+git branch -m master main
+
+# 13. You successfully pushed your local "main" branch to GitHub
+# This is when you were asked for your Username and Password (Token).
+git push -u origin main
